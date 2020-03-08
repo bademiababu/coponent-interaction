@@ -1,0 +1,40 @@
+<h1>Component Interaction</h1>
+<h2>{{"Welcome "+name}}</h2>
+<button (click) = "fireEvent()">Send Event</button>
+
+<h1>Pipes</h1>
+
+<h1>string pipes</h1>
+    <h2>uppercase:{{shortName | uppercase}}</h2>
+    <h2>lowercase:{{shortName | lowercase}}</h2>
+    <h2>titlecase:{{fullName | titlecase}}</h2>
+    <h2>slice:{{fullName | slice:3}}</h2>
+    <h2>slice between:{{fullName | slice:3:5}}</h2>
+    <h2>json pipe:{{person | json}}</h2>
+<h1>number pipes</h1>
+    <h2>number format types:{{3.456 | number:'1.2-3'}}</h2>
+    <h2>{{3.456 | number:'3.4-5'}}</h2>
+    <h2>{{3.456 | number:'3.1-2'}}</h2>
+<h1>percent pipes</h1>
+    <h2>percent:{{0.25 | percent}}</h2>
+<h1>currency pipes</h1>
+    <h2>currency default:{{0.25 | currency}}</h2>
+    <h2>currency custom:{{0.25 | currency:'GBP'}}</h2>
+    <h2>currency with code:{{0.25 | currency:'GBP':'code'}}</h2>
+<h1>date pipe</h1>
+    <h2>default:{{date}}</h2>
+    <h2>short:{{date | date:'short'}}</h2>
+    <h2>shortDate:{{date | date:'shortDate'}}</h2>
+    <h2>shortTiime:{{date |date: 'shortTime'}}</h2>
+    <h2>medium:{{date | date:'medium'}}</h2>
+    <h2>mediumDate:{{date | date:'mediumDate'}}</h2>
+    <h2>mediumTiime:{{date |date: 'mediumTime'}}</h2>
+    <h2>long:{{date | date:'long'}}</h2>
+    <h2>longDate:{{date | date:'longDate'}}</h2>
+    <h2>longTiime:{{date |date: 'longTime'}}</h2>
+    
+
+
+
+
+
